@@ -1,0 +1,135 @@
+//: # W2D2 Review - Variables and Types
+//:
+//: ## Challenge 1
+
+
+mph = 10
+
+
+//: ## Challenge 2
+
+greeting = greeting + ", Danny"
+
+
+//: ## Challenge 3
+
+
+// bicycleCount type is: Int
+// isGood's type is: Bool
+
+
+//: # W2D2 Review - Control Flow
+//:
+//: ## Challenge 1
+
+
+if kph > 0 {
+    print("We are moving \(kph) km/h")
+} else {
+    print("We are standing still")
+}
+
+
+//: ## Challenge 2
+
+
+if kph > 30.00 {
+    print("Whoa slow down buddy, \(kph) km/h is too fast for this school zone!")
+} else if kph > 0 {
+    print("We are moving \(kph) km/h")
+} else {
+    print("We are standing still")
+}
+
+
+//: # W2D2 Review - Functions
+//:
+//: ## Challenge 1
+
+
+travel("Cory", distance: 10)
+
+//: ## Challenge 2
+
+func describeSpeed(kph: Double) {
+    if kph > 30.00 {
+        print("Whoa slow down buddy, \(kph) km/h is too fast for this school zone!")
+    } else if kph > 0 {
+        print("We are moving \(kph) km/h")
+    } else {
+        print("We are standing still")
+    }
+}
+
+//: ## Challenge 3
+
+func speedDescription(kph: Double) -> String {
+    if kph > 30.00 {
+        return "Whoa slow down buddy, \(kph) km/h is too fast for this school zone!"
+    } else if kph > 0 {
+        return "We are moving \(kph) km/h"
+    } else {
+        return "We are standing still"
+    }
+}
+
+
+
+//: # W2D2 - Classes
+//:
+//: ## Challenge 1
+
+class Bicycle {
+    var numberOfGears: Int = 10
+    var currentGear: Int = 1
+    
+    func gearUp() {
+        currentGear = currentGear + 1
+    }
+    
+    func gearDown() {
+        currentGear = currentGear - 1
+    }
+}
+
+
+//: ## Challenge 2
+
+
+class Bicycle {
+    let numberOfGears: Int
+    var currentGear: Int = 1
+    
+    func gearUp() {
+        currentGear = currentGear + 1
+    }
+    
+    func gearDown() {
+        currentGear = currentGear - 1
+    }
+    
+    init(gears: Int) {
+        self.numberOfGears = gears
+    }
+}
+
+
+
+//: ## Bonus Challenge
+
+
+class Cube: Box {
+    var depth: Double = 0
+    
+    override func area() -> Double {
+        return depth * width * height
+    }
+}
+
+let myCube = Cube()
+myCube.depth = 10
+myCube.height = 5
+myCube.width = 3
+
+myCube.area()
+
