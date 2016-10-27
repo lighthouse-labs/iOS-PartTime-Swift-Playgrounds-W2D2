@@ -65,7 +65,7 @@ func complement(name: String) -> String {
     return "\(name) is the best!"
 }
 
-var result = complement("Cory")
+var result = complement(name: "Cory")
 
 
 //: Using that as an example, re-write the `describeSpeed` function so it returns a String. Call this new function `speedDescription`.
