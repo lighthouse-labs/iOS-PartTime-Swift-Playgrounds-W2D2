@@ -16,11 +16,11 @@ func rideBike() {
 //: Notice that the playground doesn't show anything to the left of the `print` statement in our `rideBike` function. That's because this code hasn't run yet.
 //: In order to run it, we have to *call* the `rideBike` function. Let's do that now by uncommenting this line:
 
-//rideBike()
+rideBike()
 
 //: If we call the function multiple times, it will run multiple times. That function is a repeatable bit of code.
 
-//rideBike() // calls the rideBike function a second time.
+rideBike() // calls the rideBike function a second time.
 
 //: Functions can take any number of parameters as input, and do something with that input. Take this example function:
 
@@ -37,21 +37,29 @@ func travel(name: String, distance: Double) {
 //: Hint: Start typing the name of the travel function, and autocomplete should suggest a completion!
 
 
-
+travel(name: "sam", distance: 2)
 
 
 //: ### Challenge 2
-//: Now, take the code your wrote in the last playground to print out a grammatical description of how fast we're moving, and write a function that takes in a Double and uses that as the kph. Call the function `describeSpeed`.
+//: Now, take the code your wrote in the last playground to print out a grammatical description of how fast we're moving, and write a function that takes in a Double and uses that as the kph. Call the function `describeSpeed(kph: )`.
 
+func describeSpeed(kph: Double) {
+    if kph == 0 {
+        print("We're standing still")
+    } else if kph <= 30 {
+        print("We're moving \(kph) km/h")
+    } else {
+        print("Whoa slow down buddy, \(kph) km/h is too fast for this school zone!")
+    }
 
-
+}
 
 
 // Test it by uncommenting these lines:
 
-// describeSpeed(10)
-// describeSpeed(0)
-// describeSpeed(100)
+ describeSpeed(kph: 10)
+ describeSpeed(kph: 0)
+ describeSpeed(kph: 100)
 
 
 //: ### Challenge 3
@@ -70,14 +78,23 @@ var result = complement(name: "Cory")
 
 //: Using that as an example, re-write the `describeSpeed` function so it returns a String. Call this new function `speedDescription`.
 
+func speedDescription(kph: Double) -> String {
+    if kph == 0 {
+        return "We're standing still"
+    } else if kph <= 30 {
+        return "We're moving \(kph) km/h"
+    } else {
+        return "Whoa slow down buddy, \(kph) km/h is too fast for this school zone!"
+    }
+}
 
 
 
 // Test it by uncommenting the lines below:
 
-//var sd1 = speedDescription(10)
-//var sd2 = speedDescription(0)
-//var sd3 = speedDescription(45)
+var sd1 = speedDescription(kph: 10)
+var sd2 = speedDescription(kph: 0)
+var sd3 = speedDescription(kph: 45)
 
 
 //: [Next](@next)
