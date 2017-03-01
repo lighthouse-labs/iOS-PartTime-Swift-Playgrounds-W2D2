@@ -66,8 +66,7 @@ var height: Double = 10
 
 
 
-//: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert between types, but we won't go into that just now.
-
+//: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert between types, but we won't go into that just now. You can delete that broken line of code now.
 
 
 //: [Next](@next)
