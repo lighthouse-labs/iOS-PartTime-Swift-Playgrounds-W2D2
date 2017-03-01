@@ -41,7 +41,7 @@ func travel(name: String, distance: Double) {
 
 
 //: ### Challenge 2
-//: Now, take the code your wrote in the last playground to print out a grammatical description of how fast we're moving, and write a function that takes in a Double and uses that as the kph. Call the function `describeSpeed`.
+//: Now, take the code your wrote in the last playground to print out a grammatical description of how fast we're moving, and write a function that takes in a Double and uses that as the kph. Call the function `describeSpeed(kph: )`.
 
 
 
@@ -49,9 +49,9 @@ func travel(name: String, distance: Double) {
 
 // Test it by uncommenting these lines:
 
-// describeSpeed(10)
-// describeSpeed(0)
-// describeSpeed(100)
+// describeSpeed(kph: 10)
+// describeSpeed(kph: 0)
+// describeSpeed(kph: 100)
 
 
 //: ### Challenge 3
@@ -75,9 +75,9 @@ var result = complement(name: "Cory")
 
 // Test it by uncommenting the lines below:
 
-//var sd1 = speedDescription(10)
-//var sd2 = speedDescription(0)
-//var sd3 = speedDescription(45)
+//var sd1 = speedDescription(kph: 10)
+//var sd2 = speedDescription(kph: 0)
+//var sd3 = speedDescription(kph: 45)
 
 
 //: [Next](@next)
