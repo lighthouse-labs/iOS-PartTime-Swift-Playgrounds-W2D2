@@ -52,18 +52,29 @@ box1.area()
 
 
 
-
+class Bicycle {
+    var numberOfGears: Int = 5
+    var currentGear: Int = 2
+    
+    func gearUp () {
+        currentGear += 1
+    }
+    
+    func gearDown () {
+        currentGear -= 1
+    }
+}
 //: Test your bicycle out by uncommenting the following code:
  
-//var myBike = Bicycle()
-//
-//myBike.numberOfGears = 16 // upgrade!
-//myBike.gearUp()
-//myBike.gearUp()
-//myBike.gearDown()
-//myBike.gearUp()
-//
-//print("my bike is in the \(myBike.currentGear)rd gear")
+var myBike = Bicycle()
+
+myBike.numberOfGears = 16 // upgrade!
+myBike.gearUp()
+myBike.gearUp()
+myBike.gearDown()
+myBike.gearUp()
+
+print("my bike is in the \(myBike.currentGear)rd gear")
 
 
 //: ## Challenge 2
@@ -107,8 +118,24 @@ brightBulb.watts
 //:
 //: Hint: don't forget to supply a number of gears when you create your bicycles!
 
+class betterBicycle {
+    let numberOfGears: Int
+    var currentGear: Int = 2
+    
+    func gearUp () {
+        currentGear += 1
+    }
+    
+    func gearDown () {
+        currentGear -= 1
+    }
+    
+    init(gears: Double) {
+        self.numberOfGears = gears
+    }
+}
 
-
+var myBicycle = betterBicycle(gears: 20)
 
 
 
@@ -129,6 +156,20 @@ brightBulb.watts
 
 
 
+class Cube: Box {
+    override var depth: Int = 0
+    
+    override func area() -> Int {
+        return height * width * depth
+    }
+}
+
+let lizCube = Cube()
+myCube.depth = 8
+myCube.height = 8
+myCube.width = 8
+
+myCube.area()
 
 //: DONE!!! - Head back to compass to do today's tutorial.
 
