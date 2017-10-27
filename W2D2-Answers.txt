@@ -3,7 +3,7 @@
 //: ## Challenge 1
 
 
-mph = 10
+mph = 90
 
 
 //: ## Challenge 2
@@ -47,7 +47,7 @@ if kph > 30.00 {
 //: ## Challenge 1
 
 
-travel("Cory", distance: 10)
+travel(name: “Cory", distance: 10)
 
 //: ## Challenge 2
 
